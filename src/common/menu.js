@@ -119,10 +119,10 @@ const menuData = [{
   path: 'new',
   children: [{
     name: '视频',
-    path: 'page1',
+    path: 'video/list',
   }, {
     name: '直播',
-    path: 'page2',
+    path: 'stream',
   }],
 }];
 

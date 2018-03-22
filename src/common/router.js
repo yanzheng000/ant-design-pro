@@ -164,13 +164,16 @@ export const getRouterData = (app) => {
       component: dynamicWrapper(app, [], () => import('../routes/User/RegisterResult')),
     },
     '/new': {
-      component: dynamicWrapper(app, ['error'], () => import('../layouts/NewLayout')),
+      component: dynamicWrapper(app, [], () => import('../layouts/NewLayout')),
     },
-    '/new/page1': {
-      component: dynamicWrapper(app, ['error'], () => import('../routes/New/Page1')),
+    '/new/video/list': {
+      component: dynamicWrapper(app, [], () => import('../routes/New/Video')),
     },
-    '/new/page2': {
-      component: dynamicWrapper(app, ['error'], () => import('../routes/New/Page2')),
+    '/new/video/:id': {
+      component: dynamicWrapper(app, [], () => import('../routes/Video/Video')),
+    },
+    '/new/stream': {
+      component: dynamicWrapper(app, [], () => import('../routes/New/Stream')),
     },
     // '/user/:id': {
     //   component: dynamicWrapper(app, [], () => import('../routes/User/SomeComponent')),
