@@ -164,13 +164,13 @@ export const getRouterData = (app) => {
       component: dynamicWrapper(app, [], () => import('../routes/User/RegisterResult')),
     },
     '/new': {
-      component: dynamicWrapper(app, ['monitor'], () => import('../layouts/NewLayout')),
+      component: dynamicWrapper(app, ['error'], () => import('../layouts/NewLayout')),
     },
     '/new/page1': {
-      component: dynamicWrapper(app, ['monitor'], () => import('../routes/New/Page1')),
+      component: dynamicWrapper(app, ['error'], () => import('../routes/New/Page1')),
     },
     '/new/page2': {
-      component: dynamicWrapper(app, ['monitor'], () => import('../routes/New/Page2')),
+      component: dynamicWrapper(app, ['error'], () => import('../routes/New/Page2')),
     },
     // '/user/:id': {
     //   component: dynamicWrapper(app, [], () => import('../routes/User/SomeComponent')),
